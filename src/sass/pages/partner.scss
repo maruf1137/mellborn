@@ -1,0 +1,24 @@
+
+.partner{
+ background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/partner.jpg);
+
+   .content {
+    align-items: center;
+    position: relative;
+  }
+
+  &__img{
+    height: 250px;
+    width: 500px;
+    img{
+      @include img-size;
+    }
+  }
+
+  h3{
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+    transform: translateX(8rem);
+  }
+}

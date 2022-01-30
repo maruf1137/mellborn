@@ -1,37 +1,45 @@
-// @import "world-clock.scss";
 
-.main-container{
-   height: 100vh;
-   width: 100%;
-   position: relative;
-}
 
-.page{
- height: 100vh;
- width: 100%;
-//  background-color: rgba(43, 6, 6, 0.5);
-display: flex;
-justify-content: center;
-align-items: center;
-background-position: top center;
-background-size: cover;
-background-repeat: no-repeat;
+.main-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.home{
-  background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/home.jpg);
+.page {
+  height: 100vh;
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  .content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1031px;
+    transform: translateY(10rem);
+    padding-left: 5rem;
+
+    @media only screen and (max-width: 68.75em) {
+      width: 90%;
+      transform: translateY(2rem);
+      padding-left: 8rem;
+    }
+
+    @media only screen and (max-width: $tab-land){
+      width: 100%;
+      padding-left: 0;
+    }
+
+  }
 }
-.about{
-  background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/about.jpg);
-}
-.portfolio{
-  background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/portfolio.jpg);
-}
-.partner{
-  background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/partner.jpg);
-}
-.contact{
-  background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/contact.jpg);
-}
+
+
+@import "home.scss";
+@import "about.scss";
+@import "contact.scss";
+@import "portfolio.scss";
+@import "partner.scss";
 

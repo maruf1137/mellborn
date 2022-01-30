@@ -1,3 +1,17 @@
+h2.heading{
+  font-size: 9.3rem;
+  opacity: 20%;
+  margin-bottom: 2rem;
+  font-family: $font-secondary;
+}
+
+h3.heading{
+  font-size: 6.1rem;
+  font-family: 'Conte\' Script reduced', sans-serif;
+  align-self: flex-end;
+  color: $color-white;
+}
+
 h5.heading {
   font-size: clamp(18px, 3vw, 2.4rem);
   font-size: 1.8rem;
@@ -12,11 +26,15 @@ h6.heading {
 }
 
 .p__text {
-  font-size: 1.6rem;
-  color: $color-black;
+  font-size: 3.5rem;
+  color: $color-white;
 }
 
 // Typography utils
+
+.block{
+  display: block;
+}
 
 .bold {
   font-weight: bold;

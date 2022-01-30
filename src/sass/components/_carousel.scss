@@ -4,47 +4,98 @@
   left: 0;
 }
 
-.item{
+.item {
   position: relative;
 }
 
-.owl-nav{
-  button.owl-prev, button.owl-next{
+.owl-nav {
+  .owl-prev,
+  .owl-next {
     position: absolute;
     top: 50%;
+
+    @media only screen and (max-width: $tab-land){
+      top: 84%;
+    }
   }
-  button.owl-prev{
-     left: 10%;
+  button.owl-prev {
+    left: 2%;
+
+    @media only screen and (max-width: $tab-land){
+      left: 40%;
+    }
+    @media only screen and (max-width: $mbl-land){
+      left: 30%;
+    }
   }
 
-  button.owl-next{
-     right: 10%;
+  button.owl-next {
+    right: 2%;
+    @media only screen and (max-width: $tab-land){
+      right: 40%;
+    }
+    @media only screen and (max-width: $mbl-land){
+      right: 30%;
+    }
   }
 }
 
-.owl-dots{
+body > div > div > div.owl-nav > button.owl-prev.disabled,
+body > div > div > div.owl-nav > button.owl-next.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  border: 2px solid white;
+  height: 6.3rem;
+  width: 6.3rem;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: transparent;
+}
+
+.owl-carousel .owl-nav button.owl-prev svg,
+.owl-carousel .owl-nav button.owl-next svg {
+  font-size: 3rem;
+  fill: $color-white;
+  background: transparent;
+  height: 50%;
+  width: 50%;
+}
+
+.owl-dots {
   position: absolute;
   top: 4rem;
   right: 5rem;
   z-index: 10;
   display: flex;
-align-items: center;
-gap: 0 3rem;
-   font-size: 2.5rem;
-font-weight: 700;
-color: $color-white;
-
-.active{
-     border-bottom: 3px solid $color-white;
-  }
+  align-items: center;
+  gap: 0 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $color-white;
+  padding-bottom: 1rem;
 }
-.owl-dots .owl-dot{
+
+.owl-theme .owl-dots .owl-dot {
   letter-spacing: 0.3rem;
-
-
+  padding-bottom: 1rem !important;
+  border-bottom: 3px solid transparent;
 }
 
-.owl-theme .owl-dots .owl-dot span{
-   display: none;
+.owl-theme .owl-dots .active {
+  border-bottom: 3px solid $color-white;
 }
 
+
+.owl-theme .owl-dots .owl-dot span {
+  display: none;
+}

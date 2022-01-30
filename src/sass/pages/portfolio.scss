@@ -1,0 +1,71 @@
+.portfolio {
+  background-image: linear-gradient($color-primary, $color-secondary),
+    url(../img/portfolio.jpg);
+
+  .content {
+    padding: 0 6rem;
+    width: 100%;
+
+    @media only screen and (max-width: 68.75em) {
+      // transform: translateY(10rem);
+      // padding-left: 8rem;
+    }
+
+    @media only screen and (max-width: $tab-port){
+      // transform: translateY(16rem);
+    }
+  }
+
+  h2{
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 8rem 4rem;
+
+    @media only screen and (max-width: 81.25em){
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media only screen and (max-width: 68.75em){
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media only screen and (max-width: $mbl-land){
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6rem 4rem;
+    }
+    @media only screen and (max-width: $mbl-port){
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem 4rem;
+    }
+  }
+
+  &__item {
+    height:13rem;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: $mbl-port){
+      height: 5.6rem;
+      width: 80%;
+    }
+
+    img {
+      height: 70%;
+      width: 60%;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    opacity: 50%;
+    margin-top: 4.5rem;
+  }
+}

@@ -21,22 +21,33 @@ html {
   @media only screen and (max-width: $laptop-port) {
     font-size: 55%;
   }
-  @media only screen and (max-width: $laptop-port) {
+  @media only screen and (max-width: $tab-port) {
     font-size: 50%;
+  }
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 42%;
   }
 }
 
 body {
   font-family: $font-primary;
   font-size: 1.6rem;
-  line-height: 1.6;
+  line-height: 1.2;
   color: $color-black;
   overflow-x: hidden;
   background-color: $color-white;
 }
 
 .custom-container {
-  width: 95%;
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 90.625em) {
+    padding: 0 5rem;
+  }
+  
+  
+  @media only screen and (max-width: $mbl-small) {
+    padding: 0 2rem;
+  }
 }

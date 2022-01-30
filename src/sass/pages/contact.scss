@@ -1,0 +1,15 @@
+.contact {
+  background-image: linear-gradient($color-primary, $color-secondary),
+    url(../img/contact.jpg);
+
+  .content {
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    gap: 2rem 0;
+
+
+  }
+}
