@@ -18,9 +18,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  @media only screen and (max-width: $laptop-port) {
+
+  @media only screen and (max-width: 93.75em) {
     font-size: 55%;
   }
+  // @media only screen and (max-width: $laptop-port) {
+  //   font-size: 55%;
+  // }
   @media only screen and (max-width: $tab-port) {
     font-size: 50%;
   }

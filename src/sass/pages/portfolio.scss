@@ -95,5 +95,9 @@
   h3 {
     opacity: 50%;
     margin-top: 4.5rem;
+
+    @media only screen and (max-width: $mbl-land){
+      margin-top: 8.5rem;
+    }
   }
 }

@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-@media only screen and (max-width: 64em) {
+@media only screen and (max-width: 93.75em) {
   html {
     font-size: 55%;
   }
@@ -93,11 +93,6 @@ h3.heading {
 @media only screen and (max-width: 35.9375em) {
   h3.heading {
     font-size: 2.2rem;
-  }
-}
-@media only screen and (max-width: 30em) {
-  h3.heading {
-    font-size: 1.6rem;
   }
 }
 
@@ -1096,6 +1091,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100vh;
 }
 
 .item {
@@ -1373,6 +1369,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   opacity: 50%;
   margin-top: 4.5rem;
 }
+@media only screen and (max-width: 35.9375em) {
+  .portfolio h3 {
+    margin-top: 8.5rem;
+  }
+}
 
 .partner {
   background-image: linear-gradient(rgba(45, 45, 45, 0.25), #2d2d2d), url(../img/partner.jpg);
@@ -1403,6 +1404,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   position: absolute;
   left: 0;
   bottom: 5rem;
+}
+@media only screen and (max-width: 93.75em) {
+  .partner h3 {
+    bottom: 3rem;
+  }
 }
 @media only screen and (max-width: 62em) {
   .partner h3 {
