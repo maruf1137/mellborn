@@ -75,12 +75,21 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* 
 @font-face {
   font-family: "Conte";
   src: url("ConteScriptreduced.woff2") format("woff2"),
     url("ConteScriptreduced.woff") format("woff"),
     url("ConteScriptreduced.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Conte\' Script reduced';
+  src: url("ConteScriptreduced.woff2") format("woff2"),
+    url("ConteScriptreduced.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

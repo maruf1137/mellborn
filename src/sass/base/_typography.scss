@@ -1,32 +1,32 @@
-h2.heading{
+h2.heading {
   font-size: 9.3rem;
   opacity: 25%;
   margin-bottom: 2rem;
   font-family: $font-secondary;
 
-  @media only screen and (max-width: $tab-port){
+  @media only screen and (max-width: $tab-port) {
     font-size: 7.5rem;
   }
-  @media only screen and (max-width: $mbl-land){
+  @media only screen and (max-width: $mbl-land) {
     font-size: 6.1rem;
   }
 }
 
-h3.heading{
+h3.heading {
   font-size: 6.1rem;
-  font-family: $font-conte;
+  font-family: "Conte' Script reduced";
   align-self: flex-end;
   color: $color-white;
   text-align: center;
 
-  @media only screen and (max-width: $laptop-land){
+  @media only screen and (max-width: $laptop-land) {
     font-size: 4.5rem;
     align-self: center;
   }
-  @media only screen and (max-width: $tab-port){
+  @media only screen and (max-width: $tab-port) {
     font-size: 3.5rem;
   }
-  @media only screen and (max-width: $mbl-land){
+  @media only screen and (max-width: $mbl-land) {
     font-size: 2.2rem;
   }
   // @media only screen and (max-width: $mbl-port){
@@ -34,23 +34,21 @@ h3.heading{
   // }
 }
 
-
-
 .p__text {
   font-size: 3.5rem;
   color: $color-white;
 
-  @media only screen and (max-width: $tab-land){
+  @media only screen and (max-width: $tab-land) {
     font-size: 2.5rem;
   }
-  @media only screen and (max-width: $mbl-land){
+  @media only screen and (max-width: $mbl-land) {
     font-size: 16px;
   }
 }
 
 // Typography utils
 
-.block{
+.block {
   display: block;
 }
 
@@ -69,7 +67,6 @@ h3.heading{
   text-transform: capitalize;
 }
 
-
 @mixin img-size {
   height: 100%;
   width: 100%;
@@ -79,4 +76,3 @@ h3.heading{
   height: 2rem;
   width: 2rem;
 }
-
