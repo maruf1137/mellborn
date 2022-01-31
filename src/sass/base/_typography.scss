@@ -3,6 +3,13 @@ h2.heading{
   opacity: 20%;
   margin-bottom: 2rem;
   font-family: $font-secondary;
+
+  @media only screen and (max-width: $tab-port){
+    font-size: 7.5rem;
+  }
+  @media only screen and (max-width: $mbl-land){
+    font-size: 6.1rem;
+  }
 }
 
 h3.heading{
@@ -10,24 +17,35 @@ h3.heading{
   font-family: 'Conte\' Script reduced', sans-serif;
   align-self: flex-end;
   color: $color-white;
+  text-align: center;
+
+  @media only screen and (max-width: $laptop-land){
+    font-size: 4.5rem;
+    align-self: center;
+  }
+  @media only screen and (max-width: $tab-port){
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: $mbl-land){
+    font-size: 2.2rem;
+  }
+  @media only screen and (max-width: $mbl-port){
+    font-size: 1.6rem;
+  }
 }
 
-h5.heading {
-  font-size: clamp(18px, 3vw, 2.4rem);
-  font-size: 1.8rem;
-}
 
-h4.heading {
-  font-size: 2.2rem;
-}
-
-h6.heading {
-  font-size: 1.5rem;
-}
 
 .p__text {
   font-size: 3.5rem;
   color: $color-white;
+
+  @media only screen and (max-width: $tab-land){
+    font-size: 2.5rem;
+  }
+  @media only screen and (max-width: $mbl-land){
+    font-size: 16px;
+  }
 }
 
 // Typography utils

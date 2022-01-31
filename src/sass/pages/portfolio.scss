@@ -5,28 +5,29 @@
   .content {
     padding: 0 6rem;
     width: 100%;
-
-    @media only screen and (max-width: 68.75em) {
-      // transform: translateY(10rem);
-      // padding-left: 8rem;
-    }
-
-    @media only screen and (max-width: $tab-port){
-      // transform: translateY(16rem);
-    }
+    justify-content: flex-start;
+    transform: translateY(10rem);
   }
 
   h2{
     margin-bottom: 4rem;
     margin-top: 8rem;
+
+    @media only screen and (max-width: $mbl-land){
+    margin-top: 6rem;
+    }
+    @media only screen and (max-width: $mbl-small){
+    margin-top: 8rem;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    justify-items: center;
     text-align: center;
-    gap: 8rem 4rem;
+    gap: 5rem 4rem;
 
     @media only screen and (max-width: 81.25em){
       grid-template-columns: repeat(4, 1fr);
@@ -34,33 +35,60 @@
     @media only screen and (max-width: 68.75em){
       grid-template-columns: repeat(3, 1fr);
     }
-    @media only screen and (max-width: $mbl-land){
+    @media only screen and (max-width: $tab-port){
       grid-template-columns: repeat(2, 1fr);
-      gap: 6rem 4rem;
+      gap: 3.5rem 4rem;
     }
-    @media only screen and (max-width: $mbl-port){
+
+    @media only screen and (max-width: $mbl-land){
       grid-template-columns: repeat(1, 1fr);
-      gap: 2rem 4rem;
+      // gap: 2.5rem 4rem;
     }
   }
 
   &__item {
-    height:13rem;
+    height:8.6rem;
+    justify-self: center;
+
+    @media only screen and (max-width: $tab-land){
+      height: 6.5rem;
+    }
+    @media only screen and (max-width: $mbl-land){
+      height: 3.9rem;
+    }
+
+    &--5{
+      @media only screen and (max-width: 81.25em){
+        grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $tab-port){
+        grid-column: 1/2;
+      }
+
+      @media only screen and (max-width: $mbl-land){
+        grid-column: 1/-1;
+      }
+    }
+    &--6{
+      grid-column: 3/4;
+      @media only screen and (max-width: $tab-port){
+        grid-column: 2/-1;
+      }
+      @media only screen and (max-width: $mbl-land){
+        grid-column: 1/-1;
+      }
+      
+    }
   }
 
   &__img {
     height: 100%;
     width: 100%;
 
-    @media only screen and (max-width: $mbl-port){
-      height: 5.6rem;
-      width: 80%;
-    }
-
     img {
-      height: 70%;
-      width: 60%;
-      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   }
 

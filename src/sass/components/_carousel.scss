@@ -17,6 +17,9 @@
     @media only screen and (max-width: $tab-land){
       top: 84%;
     }
+    @media only screen and (max-width: $mbl-land){
+      top: 87%;
+    }
   }
   button.owl-prev {
     left: 2%;
@@ -71,6 +74,8 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   width: 50%;
 }
 
+// nevigation
+
 .owl-dots {
   position: absolute;
   top: 4rem;
@@ -83,18 +88,23 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   font-weight: 700;
   color: $color-white;
   padding-bottom: 1rem;
+
+  @media only screen and (max-width: $tab-land){
+    display: none;
+  }
 }
 
 .owl-theme .owl-dots .owl-dot {
   letter-spacing: 0.3rem;
   padding-bottom: 1rem !important;
   border-bottom: 3px solid transparent;
+  transition: all .3s;
 }
 
-.owl-theme .owl-dots .active {
+.owl-theme .owl-dots .active,
+.owl-theme .owl-dots .owl-dot:hover {
   border-bottom: 3px solid $color-white;
 }
-
 
 .owl-theme .owl-dots .owl-dot span {
   display: none;
