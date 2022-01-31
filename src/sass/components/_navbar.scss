@@ -96,6 +96,12 @@
     border: none;
     outline: none;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all .3s;
+  }
+
+  .owl-dot:hover{
+    border-bottom: 3px solid $color-white;
   }
 
   .active {

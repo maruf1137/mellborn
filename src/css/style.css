@@ -1077,6 +1077,11 @@ a:hover {
   border: none;
   outline: none;
   cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+.mbl--nav .owl-dot:hover {
+  border-bottom: 3px solid #fff;
 }
 .mbl--nav .active {
   border-bottom: 3px solid #fff;
