@@ -1,45 +1,69 @@
+$(".owl-carousel").owlCarousel({
+  loop: false,
+  margin: 0,
+  nav: true,
+  navText: [
+    `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-left"></use></svg>`,
+    `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>`,
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
 
-$('.owl-carousel').owlCarousel({
-  loop:false,
-  margin:0,
-  nav:true,
-  navText: [`<svg><use xlink:href="img/icons.svg#icon-chevron-thin-left"></use></svg>`,`<svg><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>`],
-  // navText: [`<i class="fas fa-address-card"></i>`,`next`],
-  responsive:{
-      0:{
-          items:1
-      },
-  }
-})
+const owlDots = document.querySelector(".owl-dots");
+const bars = document.querySelector(".nav__bars");
 
-const owlDots = document.querySelector(".owl-dots")
-const bars = document.querySelector(".nav__bars")
+function navigationText(parentEl) {
+  const arr = ["home", "about us", "portfolio", "partner", "contact us"];
+  const markup = arr
+    .map((el) => {
+      return `<button role="button" class='${
+        el === "home" ? "owl-dot active" : "owl-dot"
+      }'>${el}</button>`;
+    })
+    .join("");
 
-function func(parentEl) {
-  const arr = ['home', 'about us', 'portfolio', 'partner', 'contact us', ]
-  const markup = arr.map(el=>{
-      return `<button role="button" class='${el === 'home' ? "owl-dot active" : 'owl-dot'}'>${el}</button>`
-    }).join('')
-  
-    parentEl.innerHTML = '';
-    parentEl.insertAdjacentHTML('afterbegin', markup)
+  parentEl.innerHTML = "";
+  parentEl.insertAdjacentHTML("afterbegin", markup);
 }
-func(owlDots)
+navigationText(owlDots);
+
+const openNav = () => {
+  owlDots.classList.add("nav-active");
+};
+const closeNav = () => {
+  owlDots.classList.remove("nav-active");
+};
+
+const toggleActive = () => {
+  // bars.classList.toggle("active");
+  if(bars.classList.contains('active')){
+    bars.classList.remove("active");
+  }else{
+    bars.classList.add("active");
+  }
+};
 
 function mblNav() {
-  const mblBar = document.querySelector('.mbl--nav')
-  console.log(mblBar);
-  if(bars.classList.contains('active')){
-    mblBar.classList.add('nav-active')
-    console.log(mblBar.classList);
-    func(mblBar)
-  }else{
-    mblBar.classList.remove('nav-active')
+  if (bars.classList.contains("active")) {
+    openNav();
+  } else {
+    closeNav();
   }
 }
 
-bars.addEventListener('click', ()=>{
-  bars.classList.toggle('active')
-  
-  mblNav()
-})
+const owlDot = document.querySelectorAll(".owl-dot");
+owlDot.forEach((el) => {
+  el.addEventListener("click", () => {
+    closeNav();
+    toggleActive();
+  });
+});
+
+bars.addEventListener("click", () => {
+  toggleActive();
+  mblNav();
+});

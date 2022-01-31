@@ -90,9 +90,33 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   color: $color-white;
   padding-bottom: 1rem;
 
-  @media only screen and (max-width: $tab-land){
-    display: none;
+
+  @media only screen and (max-width: $tab-land) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: $color-secondary;
+    z-index: 16;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem 0;
+    font-size: 3.5rem;
+    transform: translate(-100%);
+    transition: all .5s;
   }
+
+  @media only screen and (max-width: $mbl-land){
+    width: 100%;
+  }
+}
+
+.nav-active{
+  transform: translate(0);
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -100,6 +124,10 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   padding-bottom: 1rem !important;
   border-bottom: 3px solid transparent;
   transition: all .3s;
+
+  @media only screen and (max-width: $tab-land) {
+
+  }
 }
 
 .owl-theme .owl-dots .active,
