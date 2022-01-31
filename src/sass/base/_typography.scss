@@ -1,6 +1,6 @@
 h2.heading{
   font-size: 9.3rem;
-  opacity: 20%;
+  opacity: 25%;
   margin-bottom: 2rem;
   font-family: $font-secondary;
 
@@ -14,7 +14,7 @@ h2.heading{
 
 h3.heading{
   font-size: 6.1rem;
-  font-family: 'Conte\' Script reduced', sans-serif;
+  font-family: $font-conte;
   align-self: flex-end;
   color: $color-white;
   text-align: center;
