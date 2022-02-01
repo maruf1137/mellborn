@@ -1261,6 +1261,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   width: 100%;
   justify-content: flex-start;
   transform: translateY(10rem);
+  position: relative;
 }
 .portfolio h2 {
   margin-bottom: 7.5rem;
