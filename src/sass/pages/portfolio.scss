@@ -27,7 +27,7 @@
     align-items: center;
     justify-items: center;
     text-align: center;
-    gap: 5rem 4rem;
+    gap: 10rem 4rem;
 
     @media only screen and (max-width: 81.25em){
       grid-template-columns: repeat(4, 1fr);
@@ -42,20 +42,12 @@
 
     @media only screen and (max-width: $mbl-land){
       grid-template-columns: repeat(1, 1fr);
-      // gap: 2.5rem 4rem;
     }
   }
 
   &__item {
-    height:4rem;
+    height:40px;
     justify-self: center;
-
-    @media only screen and (max-width: $tab-land){
-      height: 6.5rem;
-    }
-    @media only screen and (max-width: $mbl-land){
-      height: 3.9rem;
-    }
 
     &--5{
       @media only screen and (max-width: 81.25em){
@@ -94,7 +86,7 @@
 
   h3 {
     opacity: 50%;
-    margin-top: 4.5rem;
+    margin-top: 12rem;
 
     @media only screen and (max-width: $mbl-land){
       margin-top: 8.5rem;
