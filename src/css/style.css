@@ -73,27 +73,11 @@ h2.heading {
 }
 
 h3.heading {
-  font-size: 6.1rem;
+  font-size: 4rem;
   font-family: "Conte' Script reduced";
   align-self: flex-end;
   color: #fff;
   text-align: center;
-}
-@media only screen and (max-width: 75em) {
-  h3.heading {
-    font-size: 4.5rem;
-    align-self: center;
-  }
-}
-@media only screen and (max-width: 48em) {
-  h3.heading {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  h3.heading {
-    font-size: 2.2rem;
-  }
 }
 
 .p__text {
