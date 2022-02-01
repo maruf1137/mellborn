@@ -1251,7 +1251,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   transform: translateY(10rem);
 }
 .portfolio h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 7.5rem;
   margin-top: 8rem;
 }
 @media only screen and (max-width: 35.9375em) {
@@ -1350,9 +1350,10 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   padding: 0 6rem;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  transform: translateY(0);
-  align-items: center;
+  transform: translateY(-6rem);
+  align-items: flex-start;
   position: relative;
 }
 @media only screen and (max-width: 62em) {
@@ -1360,9 +1361,13 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     transform: translateY(-5%);
   }
 }
+.partner .content h2 {
+  margin-bottom: 7rem;
+}
 .partner__img {
-  height: 25rem;
-  width: 50rem;
+  height: 13rem;
+  width: 28rem;
+  margin: 0 auto;
 }
 .partner__img img {
   height: 100%;
@@ -1371,7 +1376,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 .partner h3 {
   position: absolute;
   left: 0;
-  bottom: 5rem;
+  bottom: -2rem;
 }
 @media only screen and (max-width: 93.75em) {
   .partner h3 {

@@ -6,19 +6,26 @@
     padding: 0 6rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    transform: translateY(0);
-    align-items: center;
+    transform: translateY(-6rem);
+    align-items: flex-start;
     position: relative;
 
     @media only screen and (max-width: $tab-land){
       transform: translateY(-5%);
     }
+
+    h2{
+      margin-bottom: 7rem;
+    }
   }
 
   &__img{
-    height: 25rem;
-    width: 50rem;
+    height: 13rem;
+    width: 28rem;
+    // margin-bottom: 22rem;
+    margin: 0 auto;
     img{
       @include img-size;
     }
@@ -27,7 +34,7 @@
   h3{
     position: absolute;
     left: 0;
-    bottom: 5rem;
+    bottom: -2rem;
 
     @media only screen and (max-width: 93.75em){
       bottom: 3rem;
