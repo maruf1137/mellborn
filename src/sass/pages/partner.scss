@@ -24,7 +24,6 @@
   &__img{
     height: 13rem;
     width: 28rem;
-    // margin-bottom: 22rem;
     margin: 0 auto;
     img{
       @include img-size;
@@ -35,10 +34,6 @@
     position: absolute;
     left: 0;
     bottom: -2rem;
-
-    // @media only screen and (max-width: 93.75em){
-    //   bottom: 3rem;
-    // }
     
     @media only screen and (max-width: $tab-port){
       bottom: 8rem;
