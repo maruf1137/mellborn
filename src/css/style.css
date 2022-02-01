@@ -1285,12 +1285,12 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 @media only screen and (max-width: 48em) {
   .portfolio__list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.5rem 4rem;
   }
 }
 @media only screen and (max-width: 35.9375em) {
   .portfolio__list {
     grid-template-columns: repeat(1, 1fr);
+    gap: 4.6rem 0;
   }
 }
 .portfolio__item {
@@ -1335,11 +1335,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 }
 .portfolio h3 {
   opacity: 50%;
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 @media only screen and (max-width: 35.9375em) {
   .portfolio h3 {
-    margin-top: 8.5rem;
+    margin-top: 6.5rem;
   }
 }
 
