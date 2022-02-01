@@ -18,9 +18,12 @@
     @media only screen and (max-width: $tab-land){
       top: 84%;
     }
-    @media only screen and (max-width: $mbl-land){
-      top: 87%;
+    @media only screen and (max-width: $tab-port){
+      top: 90%;
     }
+    // @media only screen and (max-width: $mbl-land){
+    //   top: 92%;
+    // }
   }
   button.owl-prev {
     left: 2%;
@@ -94,6 +97,10 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     right: 8rem;
     gap: 7rem;
   }
+
+  // @media only screen and (max-width: $mbl-land){
+  //   top: 4rem;
+  // }
 
 
   @media only screen and (max-width: $tab-land) {

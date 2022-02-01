@@ -6,8 +6,8 @@
     z-index: 12;
     top: 6rem;
     left: 9rem;
-    width: 21rem;
-    height: 8.6rem;
+    width: 25rem;
+    height: 13.6rem;
 
     img{
       @include img-size;
@@ -16,6 +16,10 @@
     @media only screen and (max-width: 93.75em) {
       left: 6.5rem;
     }
+
+    // @media only screen and (max-width: $mbl-land){
+    //   top: 4rem;
+    // }
   }
 
   &__bars {

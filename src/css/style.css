@@ -990,8 +990,8 @@ a:hover {
   z-index: 12;
   top: 6rem;
   left: 9rem;
-  width: 21rem;
-  height: 8.6rem;
+  width: 25rem;
+  height: 13.6rem;
 }
 .nav__logo--area img {
   height: 100%;
@@ -1064,10 +1064,10 @@ a:hover {
     top: 84%;
   }
 }
-@media only screen and (max-width: 35.9375em) {
+@media only screen and (max-width: 48em) {
   .owl-nav .owl-prev,
 .owl-nav .owl-next {
-    top: 87%;
+    top: 90%;
   }
 }
 .owl-nav button.owl-prev {
@@ -1282,6 +1282,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     margin-top: 8rem;
   }
 }
+@media only screen and (max-width: 35.9375em) {
+  .portfolio h2 {
+    margin-bottom: 5rem;
+  }
+}
 .portfolio__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1308,7 +1313,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 @media only screen and (max-width: 35.9375em) {
   .portfolio__list {
     grid-template-columns: repeat(1, 1fr);
-    gap: 4.6rem 0;
+    gap: 3.6rem 0;
   }
 }
 .portfolio__item {
@@ -1362,6 +1367,16 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     bottom: 12%;
     right: 16%;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .portfolio h3 {
+    bottom: 28%;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .portfolio h3 {
+    bottom: 20%;
   }
 }
 
