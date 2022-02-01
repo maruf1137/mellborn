@@ -78,6 +78,8 @@ h3.heading {
   align-self: flex-end;
   color: #fff;
   text-align: center;
+  text-align: right;
+  width: 80%;
 }
 
 .p__text {
@@ -981,7 +983,7 @@ a:hover {
 .nav__logo--area {
   position: absolute;
   z-index: 12;
-  top: 3rem;
+  top: 6rem;
   left: 4rem;
   width: 21rem;
   height: 8.6rem;
@@ -992,7 +994,7 @@ a:hover {
 }
 .nav__bars {
   position: absolute;
-  top: 5rem;
+  top: 8rem;
   right: 4rem;
   z-index: 20;
   height: 6rem;
@@ -1113,7 +1115,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 
 .owl-dots {
   position: absolute;
-  top: 4rem;
+  top: 8rem;
   right: 5rem;
   z-index: 10;
   display: flex;
@@ -1359,7 +1361,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 }
 .partner h3 {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: -2rem;
 }
 @media only screen and (max-width: 48em) {
