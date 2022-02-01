@@ -984,7 +984,7 @@ a:hover {
   position: absolute;
   z-index: 12;
   top: 6rem;
-  left: 4rem;
+  left: 8rem;
   width: 21rem;
   height: 8.6rem;
 }
@@ -995,7 +995,7 @@ a:hover {
 .nav__bars {
   position: absolute;
   top: 8rem;
-  right: 4rem;
+  right: 8rem;
   z-index: 20;
   height: 6rem;
   width: 6rem;
@@ -1116,7 +1116,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 .owl-dots {
   position: absolute;
   top: 8rem;
-  right: 5rem;
+  right: 8rem;
   z-index: 10;
   display: flex;
   align-items: center;
