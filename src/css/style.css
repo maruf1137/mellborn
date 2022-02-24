@@ -1272,21 +1272,6 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     margin-top: 10rem;
   }
 }
-@media only screen and (max-width: 35.9375em) {
-  .portfolio h2 {
-    margin-top: 6rem;
-  }
-}
-@media only screen and (max-width: 23.75em) {
-  .portfolio h2 {
-    margin-top: 8rem;
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  .portfolio h2 {
-    margin-bottom: 5rem;
-  }
-}
 .portfolio__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
