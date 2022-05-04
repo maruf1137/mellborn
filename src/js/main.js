@@ -17,7 +17,7 @@ const owlDots = document.querySelector(".owl-dots");
 const bars = document.querySelector(".nav__bars");
 
 function navigationText(parentEl) {
-  const arr = ["home", "about us", "portfolio", "partner", "contact us"];
+  const arr = ["home", "about us", "interest", "projects", "contact us"];
   const markup = arr
     .map((el) => {
       return `<button role="button" class='${
@@ -40,9 +40,9 @@ const closeNav = () => {
 
 const toggleActive = () => {
   // bars.classList.toggle("active");
-  if(bars.classList.contains('active')){
+  if (bars.classList.contains("active")) {
     bars.classList.remove("active");
-  }else{
+  } else {
     bars.classList.add("active");
   }
 };
@@ -67,3 +67,16 @@ bars.addEventListener("click", () => {
   toggleActive();
   mblNav();
 });
+
+function aboutUs() {
+  const about = document.querySelector(".about");
+  const aboutActive = about.parentElement.parentElement;
+  console.log(about.parentElement.parentElement, aboutActive);
+  if (aboutActive.classList.contains(".active")) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+
+aboutUs();

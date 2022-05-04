@@ -1,8 +1,8 @@
+.partner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)),
+    url(../img/interest.png);
 
-.partner{
- background-image: linear-gradient($color-primary, $color-secondary) ,url(../img/partner.jpg);
-
-   .content {
+  .content {
     padding: 0 6rem;
     width: 100%;
     display: flex;
@@ -12,36 +12,36 @@
     align-items: flex-start;
     position: relative;
 
-    @media only screen and (max-width: $tab-land){
+    @media only screen and (max-width: $tab-land) {
       transform: translateY(-5%);
     }
 
-    h2{
+    h2 {
       margin-bottom: 7rem;
     }
   }
 
-  &__img{
+  &__img {
     height: 13rem;
     width: 28rem;
     margin: 0 auto;
-    img{
+    img {
       @include img-size;
     }
   }
 
-  h3{
+  h3 {
     position: absolute;
     right: 0;
     bottom: -2rem;
-    
-    @media only screen and (max-width: $tab-port){
+
+    @media only screen and (max-width: $tab-port) {
       bottom: 8rem;
     }
   }
 
-  h2{
-    @media only screen and (max-width: $tab-port){
+  h2 {
+    @media only screen and (max-width: $tab-port) {
       text-align: center;
     }
   }

@@ -1,19 +1,13 @@
 .contact {
-  background-image: linear-gradient($color-primary, $color-secondary),
-    url(../img/contact.jpg);
+  background-image: url(../img/contactus.png);
 
-  .content {
-  }
-
-  h2{
+  h2 {
     text-align: left;
   }
 
-  &__item{
+  &__item {
     display: flex;
     align-items: center;
     gap: 2rem 0;
-
-
   }
 }
