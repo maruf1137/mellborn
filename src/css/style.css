@@ -1265,6 +1265,7 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 }
 .portfolio h3 {
   font-family: "Conte' Script reduced";
+  font-size: 3rem;
 }
 .portfolio__list {
   display: grid;
@@ -1272,12 +1273,18 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   align-items: center;
   justify-items: center;
   text-align: center;
-  gap: 27rem 18rem;
-  margin-top: 18rem;
+  gap: 22rem 15rem;
+  margin-top: 26rem;
+}
+@media only screen and (max-width: 93.75em) {
+  .portfolio__list {
+    gap: 20rem 10rem;
+    margin-top: 8rem;
+  }
 }
 @media only screen and (max-width: 81.25em) {
   .portfolio__list {
-    margin-top: 4rem;
+    gap: 20rem 20rem;
   }
 }
 @media only screen and (max-width: 48em) {
