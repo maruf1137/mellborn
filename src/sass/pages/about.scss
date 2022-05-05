@@ -1,4 +1,9 @@
 .about {
   background-image: linear-gradient($color-primary, $color-secondary),
     url(../img/about\ us.png);
+
+  @media only screen and (max-width: $tab-port) {
+    background-image: linear-gradient($color-primary, $color-secondary),
+      url(../img/about-mbl.png);
+  }
 }

@@ -1206,6 +1206,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 48em) {
+  .page {
+    background-position: center;
+  }
+}
 .page .content {
   height: 100vh;
   display: flex;
@@ -1234,16 +1239,31 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 }
 
 .home {
-  background-image: url(../img/home.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/home.png);
   color: #fff;
+}
+@media only screen and (max-width: 48em) {
+  .home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/home-mbl.png);
+  }
 }
 
 .about {
   background-image: linear-gradient(rgba(45, 45, 45, 0.25), #2d2d2d), url(../img/about\ us.png);
 }
+@media only screen and (max-width: 48em) {
+  .about {
+    background-image: linear-gradient(rgba(45, 45, 45, 0.25), #2d2d2d), url(../img/about-mbl.png);
+  }
+}
 
 .contact {
   background-image: url(../img/contactus.png);
+}
+@media only screen and (max-width: 48em) {
+  .contact {
+    background-image: url(../img/contact-mbl.png);
+  }
 }
 .contact h2 {
   text-align: left;
@@ -1256,6 +1276,12 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 
 .portfolio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/projects.png);
+}
+@media only screen and (max-width: 48em) {
+  .portfolio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/projects-mbl.png);
+    background-position: center;
+  }
 }
 .portfolio .content {
   padding: 0 6rem;
@@ -1282,14 +1308,21 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     margin-top: 8rem;
   }
 }
-@media only screen and (max-width: 81.25em) {
-  .portfolio__list {
-    gap: 20rem 20rem;
-  }
-}
 @media only screen and (max-width: 48em) {
   .portfolio__list {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 12rem;
+    gap: 33rem 20rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .portfolio__list {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .portfolio__list {
+    gap: 16rem 9rem;
   }
 }
 .portfolio__item {
@@ -1307,6 +1340,11 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 
 .partner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)), url(../img/interest.png);
+}
+@media only screen and (max-width: 48em) {
+  .partner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)), url(../img/interest-mbl.png);
+  }
 }
 .partner .content {
   padding: 0 6rem;

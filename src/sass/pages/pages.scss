@@ -11,6 +11,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media only screen and (max-width: $tab-port) {
+    background-position: center;
+  }
+
   .content {
     height: 100vh;
     display: flex;

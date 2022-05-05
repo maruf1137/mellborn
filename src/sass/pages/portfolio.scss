@@ -2,23 +2,18 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/projects.png);
 
+  @media only screen and (max-width: $tab-port) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../img/projects-mbl.png);
+    background-position: center;
+  }
+
   .content {
     padding: 0 6rem;
     width: 100%;
     justify-content: center;
     align-items: center;
-    // transform: translateY(10rem);
-    // position: relative;
   }
-
-  // h2 {
-  //   margin-bottom: 7.5rem;
-  //   margin-top: 15rem;
-
-  //   @media only screen and (max-width: 93.75em) {
-  //     margin-top: 10rem;
-  //   }
-  // }
 
   h3 {
     font-family: $font-conte;
@@ -39,21 +34,18 @@
       margin-top: 8rem;
     }
 
-    @media only screen and (max-width: 81.25em) {
-      gap: 20rem 20rem;
-      // margin-top: 8rem;
-    }
-    // @media only screen and (max-width: 68.75em) {
-    //   grid-template-columns: repeat(3, 1fr);
-    // }
     @media only screen and (max-width: $tab-port) {
       grid-template-columns: repeat(2, 1fr);
+      margin-top: 12rem;
+      gap: 33rem 20rem;
     }
 
-    // @media only screen and (max-width: $mbl-land) {
-    //   grid-template-columns: repeat(1, 1fr);
-    //   gap: 3.6rem 0;
-    // }
+    @media only screen and (max-width: $mbl-land) {
+      margin-top: 1rem;
+    }
+    @media only screen and (max-width: $mbl-port) {
+      gap: 16rem 9rem;
+    }
   }
 
   &__item {

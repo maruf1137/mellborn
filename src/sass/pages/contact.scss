@@ -1,6 +1,10 @@
 .contact {
   background-image: url(../img/contactus.png);
 
+  @media only screen and (max-width: $tab-port) {
+    background-image: url(../img/contact-mbl.png);
+  }
+
   h2 {
     text-align: left;
   }

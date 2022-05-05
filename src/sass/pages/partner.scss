@@ -2,6 +2,14 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)),
     url(../img/interest.png);
 
+  @media only screen and (max-width: $tab-port) {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.178),
+        rgba(0, 0, 0, 0.178)
+      ),
+      url(../img/interest-mbl.png);
+  }
+
   .content {
     padding: 0 6rem;
     width: 100%;

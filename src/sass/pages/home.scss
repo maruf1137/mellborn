@@ -1,4 +1,10 @@
 .home {
-  background-image: url(../img/home.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/home.png);
   color: $color-white;
+
+  @media only screen and (max-width: $tab-port) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/home-mbl.png);
+  }
 }
