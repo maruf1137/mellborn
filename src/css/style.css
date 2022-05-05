@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Calibri", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
   color: #000000;
@@ -59,7 +59,7 @@ h2.heading {
   font-size: 9.3rem;
   opacity: 25%;
   margin-bottom: 2rem;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Freestyle Script", sans-serif;
 }
 @media only screen and (max-width: 48em) {
   h2.heading {
@@ -74,7 +74,7 @@ h2.heading {
 
 h3.heading {
   font-size: 4rem;
-  font-family: "Conte' Script reduced";
+  font-family: "Freestyle Script", sans-serif;
   color: #fff;
   text-align: center;
 }
@@ -1290,8 +1290,18 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
   align-items: center;
 }
 .portfolio h3 {
-  font-family: "Conte' Script reduced";
-  font-size: 3rem;
+  font-family: "Freestyle Script", sans-serif;
+  font-size: 5rem;
+}
+@media only screen and (max-width: 62em) {
+  .portfolio h3 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .portfolio h3 {
+    font-size: 3.5rem;
+  }
 }
 .portfolio__list {
   display: grid;
