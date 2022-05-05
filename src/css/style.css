@@ -75,11 +75,8 @@ h2.heading {
 h3.heading {
   font-size: 4rem;
   font-family: "Conte' Script reduced";
-  align-self: flex-end;
   color: #fff;
   text-align: center;
-  text-align: right;
-  width: 80%;
 }
 
 .p__text {
@@ -1042,6 +1039,10 @@ a:hover {
   transform: translateY(-0.2rem) rotate(-45deg);
 }
 
+#logo-2 {
+  display: none;
+}
+
 .owl-carousel {
   position: absolute;
   top: 0;
@@ -1254,40 +1255,29 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 }
 
 .portfolio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)), url(../img/projects.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/projects.png);
 }
 .portfolio .content {
   padding: 0 6rem;
   width: 100%;
-  justify-content: flex-start;
-  transform: translateY(10rem);
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio h2 {
-  margin-bottom: 7.5rem;
-  margin-top: 15rem;
-}
-@media only screen and (max-width: 93.75em) {
-  .portfolio h2 {
-    margin-top: 10rem;
-  }
+.portfolio h3 {
+  font-family: "Conte' Script reduced";
 }
 .portfolio__list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   text-align: center;
-  gap: 10rem 4rem;
+  gap: 27rem 18rem;
+  margin-top: 18rem;
 }
 @media only screen and (max-width: 81.25em) {
   .portfolio__list {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media only screen and (max-width: 68.75em) {
-  .portfolio__list {
-    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
   }
 }
 @media only screen and (max-width: 48em) {
@@ -1295,43 +1285,9 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 35.9375em) {
-  .portfolio__list {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3.6rem 0;
-  }
-}
 .portfolio__item {
   height: 40px;
   justify-self: center;
-}
-@media only screen and (max-width: 81.25em) {
-  .portfolio__item--5 {
-    grid-column: 2/3;
-  }
-}
-@media only screen and (max-width: 48em) {
-  .portfolio__item--5 {
-    grid-column: 1/2;
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  .portfolio__item--5 {
-    grid-column: 1/-1;
-  }
-}
-.portfolio__item--6 {
-  grid-column: 3/4;
-}
-@media only screen and (max-width: 48em) {
-  .portfolio__item--6 {
-    grid-column: 2/-1;
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  .portfolio__item--6 {
-    grid-column: 1/-1;
-  }
 }
 .portfolio__img {
   height: 100%;
@@ -1340,29 +1296,6 @@ body > div > div > div.owl-nav > button.owl-next.disabled {
 .portfolio__img img {
   height: 100%;
   width: 100%;
-}
-.portfolio h3 {
-  opacity: 50%;
-  position: absolute;
-  bottom: 18%;
-  right: 16%;
-}
-@media only screen and (max-width: 48em) {
-  .portfolio h3 {
-    bottom: 12%;
-    right: 16%;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 62em) {
-  .portfolio h3 {
-    bottom: 28%;
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  .portfolio h3 {
-    bottom: 20%;
-  }
 }
 
 .partner {

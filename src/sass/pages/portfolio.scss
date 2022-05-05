@@ -1,75 +1,81 @@
 .portfolio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.178)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/projects.png);
 
   .content {
     padding: 0 6rem;
     width: 100%;
-    justify-content: flex-start;
-    transform: translateY(10rem);
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    // transform: translateY(10rem);
+    // position: relative;
   }
 
-  h2 {
-    margin-bottom: 7.5rem;
-    margin-top: 15rem;
+  // h2 {
+  //   margin-bottom: 7.5rem;
+  //   margin-top: 15rem;
 
-    @media only screen and (max-width: 93.75em) {
-      margin-top: 10rem;
-    }
+  //   @media only screen and (max-width: 93.75em) {
+  //     margin-top: 10rem;
+  //   }
+  // }
+
+  h3 {
+    font-family: $font-conte;
   }
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
     text-align: center;
-    gap: 10rem 4rem;
+    gap: 27rem 18rem;
+    margin-top: 18rem;
 
     @media only screen and (max-width: 81.25em) {
-      grid-template-columns: repeat(4, 1fr);
+      margin-top: 4rem;
     }
-    @media only screen and (max-width: 68.75em) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    // @media only screen and (max-width: 68.75em) {
+    //   grid-template-columns: repeat(3, 1fr);
+    // }
     @media only screen and (max-width: $tab-port) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media only screen and (max-width: $mbl-land) {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 3.6rem 0;
-    }
+    // @media only screen and (max-width: $mbl-land) {
+    //   grid-template-columns: repeat(1, 1fr);
+    //   gap: 3.6rem 0;
+    // }
   }
 
   &__item {
     height: 40px;
     justify-self: center;
 
-    &--5 {
-      @media only screen and (max-width: 81.25em) {
-        grid-column: 2/3;
-      }
+    // &--5 {
+    //   @media only screen and (max-width: 81.25em) {
+    //     grid-column: 2/3;
+    //   }
 
-      @media only screen and (max-width: $tab-port) {
-        grid-column: 1/2;
-      }
+    //   @media only screen and (max-width: $tab-port) {
+    //     grid-column: 1/2;
+    //   }
 
-      @media only screen and (max-width: $mbl-land) {
-        grid-column: 1/-1;
-      }
-    }
+    //   @media only screen and (max-width: $mbl-land) {
+    //     grid-column: 1/-1;
+    //   }
+    // }
 
-    &--6 {
-      grid-column: 3/4;
-      @media only screen and (max-width: $tab-port) {
-        grid-column: 2/-1;
-      }
-      @media only screen and (max-width: $mbl-land) {
-        grid-column: 1/-1;
-      }
-    }
+    // &--6 {
+    //   grid-column: 3/4;
+    //   @media only screen and (max-width: $tab-port) {
+    //     grid-column: 2/-1;
+    //   }
+    //   @media only screen and (max-width: $mbl-land) {
+    //     grid-column: 1/-1;
+    //   }
+    // }
   }
 
   &__img {
@@ -82,27 +88,27 @@
     }
   }
 
-  h3 {
-    opacity: 50%;
-    position: absolute;
-    bottom: 18%;
-    right: 16%;
+  // h3 {
+  //   opacity: 50%;
+  //   position: absolute;
+  //   bottom: 18%;
+  //   right: 16%;
 
-    @media only screen and (max-width: 93.75em) {
-      // margin-top: 8rem;
-    }
+  //   @media only screen and (max-width: 93.75em) {
+  //     // margin-top: 8rem;
+  //   }
 
-    @media only screen and (max-width: $tab-port) {
-      bottom: 12%;
-      right: 16%;
-      text-align: center;
-    }
+  //   @media only screen and (max-width: $tab-port) {
+  //     bottom: 12%;
+  //     right: 16%;
+  //     text-align: center;
+  //   }
 
-    @media only screen and (max-width: $tab-land) {
-      bottom: 28%;
-    }
-    @media only screen and (max-width: $mbl-land) {
-      bottom: 20%;
-    }
-  }
+  //   @media only screen and (max-width: $tab-land) {
+  //     bottom: 28%;
+  //   }
+  //   @media only screen and (max-width: $mbl-land) {
+  //     bottom: 20%;
+  //   }
+  // }
 }

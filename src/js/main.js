@@ -15,11 +15,23 @@ $(".owl-carousel").owlCarousel({
 
 const owlDots = document.querySelector(".owl-dots");
 const bars = document.querySelector(".nav__bars");
+// const logo =
 
 function navigationText(parentEl) {
   const arr = ["home", "about us", "interest", "projects", "contact us"];
   const markup = arr
     .map((el) => {
+      // if (el === "about us") {
+      //   // logo.src =
+      //   //   "https://github.com/maruf1137/mellborn/blob/main/src/img/LOGO%202.png?raw=true";
+      //   // console.log("true");
+      //   logo.classList.add("aboutActie");
+      // } else {
+      //   // logo.src =
+      //   //   "https://github.com/maruf1137/mellborn/blob/main/src/img/LOGO%201.png?raw=true";
+      //   // console.log("false");
+      //   logo.classList.remove("aboutActie");
+      // }
       return `<button role="button" class='${
         el === "home" ? "owl-dot active" : "owl-dot"
       }'>${el}</button>`;
@@ -68,15 +80,22 @@ bars.addEventListener("click", () => {
   mblNav();
 });
 
-function aboutUs() {
-  const about = document.querySelector(".about");
-  const aboutActive = about.parentElement.parentElement;
-  console.log(about.parentElement.parentElement, aboutActive);
-  if (aboutActive.classList.contains(".active")) {
-    console.log("true");
+// const body = document.querySelector(".about").closest("logo");
+let owl = $(".owl-carousel");
+owl.owlCarousel();
+owl.on("changed.owl.carousel", function (event) {
+  // console.log(event.page.index);
+  const logo1 = document.getElementById("logo-1");
+  const logo2 = document.getElementById("logo-2");
+
+  if (event.page.index === 1) {
+    console.log(logo1);
+    console.log(logo2);
+    logo1.style.display = "none";
+    logo2.style.display = "block";
   } else {
     console.log("false");
+    logo1.style.display = "block";
+    logo2.style.display = "none";
   }
-}
-
-aboutUs();
+});
