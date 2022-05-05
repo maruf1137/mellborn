@@ -3,8 +3,11 @@ $(".owl-carousel").owlCarousel({
   margin: 0,
   nav: true,
   navText: [
-    `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-left"></use></svg>`,
-    `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>`,
+    `<img src="img/chevron-left.png">`,
+    `<img src="img/chevron-right.png">`,
+    // `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>`,
+    // `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-left"></use></svg>`,
+    // `<svg><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>`,
   ],
   responsive: {
     0: {
@@ -21,17 +24,6 @@ function navigationText(parentEl) {
   const arr = ["home", "about us", "interest", "projects", "contact us"];
   const markup = arr
     .map((el) => {
-      // if (el === "about us") {
-      //   // logo.src =
-      //   //   "https://github.com/maruf1137/mellborn/blob/main/src/img/LOGO%202.png?raw=true";
-      //   // console.log("true");
-      //   logo.classList.add("aboutActie");
-      // } else {
-      //   // logo.src =
-      //   //   "https://github.com/maruf1137/mellborn/blob/main/src/img/LOGO%201.png?raw=true";
-      //   // console.log("false");
-      //   logo.classList.remove("aboutActie");
-      // }
       return `<button role="button" class='${
         el === "home" ? "owl-dot active" : "owl-dot"
       }'>${el}</button>`;
